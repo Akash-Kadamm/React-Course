@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+   <link href="./index.css" rel="stylesheet" />
+   
+    <!--React By CDN-->
+    <!-- these are the two links to add react in project-->
+    <!-- Importing react into  our project by below link-->
+    <!-- Below link -its just a plain javascript code which enhance some featurs. -->
+    <!-- First file is core file of ract which having some APIs-->
+    <!-- CrossOrigin:- CORS enables you to access a resource from a different origin-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+
+    <!--This file is useful for  DOM manupalition -->
+    <!-- this file contains some apis for easy dom manupalition-->
+    <!-- Dom file is a bridge  between React core and Browser dom manupalation-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+
+    <!--By Simple HTML page-->
+    <!--<div id="root"> Hello World !</div>-->
+    <h1> Hello from top of root</h1>
+    <div id="root">
+        <!-- if there is any element already present in root tag and we call render on root by supply another react eleent
+        the previous element is replaced with new element.
+     All the elements of react will render inside  this  div root only. not outside the root div .
+     all ouside root is keep same and render by browser like "Hello from top of root"    
+     insort-- its all about root rest of all html remains same.
+    -->
+<!-- <h1>Akash is here!</h1> -->
+
+    </div>
+
+    <!--By JavaScript -->
+    <!-- <script>
+    const heading= document.createElement("h1");
+    heading.innerHTML ="Hello world from java script";
+
+    const root=document.getElementById("root");
+    root.appendChild(heading);
+    </script> -->
+    <script src="./App.js"></script>
+
+    <!--Order of files always matters most.
+    it  should be like this
+    React core file --<> React DOM file --<> than APP.js (javascript file).
+    -->
+  </body>
+</html>
